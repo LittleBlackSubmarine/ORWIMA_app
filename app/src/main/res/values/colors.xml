@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#271E1E</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="heading">#77422A</color>
+    <color name="cardview_background">#FAF8F8</color>
+    <color name="plus_sign">#F37612</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="55dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/heading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/heading"
+        android:textSize="90sp"
+        android:fontFamily="@font/vibes"
+        android:text="@string/heading"
+        />
+
+
+    <Button
+        android:id="@+id/cook_btn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cook_btn"
+        android:fontFamily="sans-serif-black"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        android:textSize="15sp"
+        android:onClick="BtnClick"
+        />
+
+
+
+</LinearLayout>
