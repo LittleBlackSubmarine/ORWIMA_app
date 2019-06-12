@@ -13,7 +13,6 @@
         android:id="@+id/icon_iv"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_marginTop="55dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/icon" />
 
@@ -38,11 +37,31 @@
         android:background="@android:color/white"
         android:textColor="@color/colorPrimaryDark"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="140dp"
-        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
         android:onClick="BtnClick"
         />
 
+    <Button
+        android:id="@+id/about_btn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/about_btn"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+
+        />
+
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/frame_cnt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
 
 
 </LinearLayout>
