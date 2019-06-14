@@ -2,7 +2,6 @@ package com.example.mychef_orwima;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.res.ResourcesCompat;
@@ -12,9 +11,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class StartActivity extends AppCompatActivity implements FragmentAbout.OnFragmentInteractionListener {
+public class StartActivity extends AppCompatActivity  {
 
     private Button about_btn;
+
+    private FragmentAbout mFragment;
+    FragmentManager fManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class StartActivity extends AppCompatActivity implements FragmentAbout.On
         about_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addFragment(new FragmentAbout(),false,"one");
+                setFragment();
             }
         });
 
@@ -36,21 +38,15 @@ public class StartActivity extends AppCompatActivity implements FragmentAbout.On
         textView.setTypeface(typeface);
     }
 
-    public void addFragment(Fragment fragment, boolean addToBackStack, String tag) {
-        FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction ft = manager.beginTransaction();
-
-        if (addToBackStack) {
-            ft.addToBackStack(tag);
-        }
-        ft.replace(R.id.frame_cnt, fragment, tag);
-        ft.commitAllowingStateLoss();
+    public void setFragment() {
+        mFragment=new FragmentAbout();
+        fManager = getSupportFragmentManager();
+        FragmentTransaction ft = fManager.beginTransaction();
+        ft.add(R.id.frame_cnt,mFragment);
+        ft.commit();
     }
 
-    @Override
-    public void onFragmentInteraction(String uri) {
-        System.out.println(uri);
-    }
+
 
     public void BtnClick(View v) {
         Intent intent = new Intent(StartActivity.this, MainActivity.class);

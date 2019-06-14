@@ -9,4 +9,7 @@
     <string name="about_row1">Tired of thinking what meal you should take with your beer?</string>
     <string name="about_row2">Than this is app for you!</string>
     <string name="about_row3">Cheers! </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
