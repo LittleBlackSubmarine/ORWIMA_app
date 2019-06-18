@@ -16,7 +16,7 @@ public class StartActivity extends AppCompatActivity  {
     private Button about_btn;
 
     private FragmentAbout mFragment;
-    FragmentManager fManager;
+    private FragmentManager fManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
